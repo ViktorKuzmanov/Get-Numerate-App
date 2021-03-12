@@ -6,19 +6,29 @@ body {
 
 #paragraphOne {
 	text-align: center;
-	font-size: large;
+	font-size: xx-large;
 }
 
 .container {
-	/* height: 80%;
-	width: 90%;
-	height: 80%;
-	margin: 0 auto; */
 	border: 3px solid #73ad21;
 	position: fixed;
 	bottom: 0;
 	margin: 0 auto;
 	width: 95%;
 	height: 80%;
+	padding: 10px;
 	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.box {
+	border: 1px solid #7037bb;
+	width: 100px;
+	max-height: 100px;
+	padding: 30px;
+	margin: 50px;
+	flex: 1;
 }
