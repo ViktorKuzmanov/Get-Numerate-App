@@ -27,8 +27,7 @@ body {
 .box {
 	border: 1px solid #7037bb;
 	width: 100px;
-	max-height: 100px;
-	padding: 30px;
-	margin: 50px;
+	height: 100px;
+	margin: 20px;
 	flex: 1;
 }
