@@ -9,11 +9,16 @@
 		<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
 		<meta name="theme-color" content="#f875aa" />
 		<link rel="stylesheet" href="styles.css" />
+		<script>
+			function operationWasChosen(event) {
+				console.log("v1");
+			}
+		</script>
 	</head>
 	<body>
 		<p id="paragraphOne">What do you want to practise today?</p>
 		<div class="container">
-			<a href="" class="box">Addition</a>
+			<a href="" class="box" onclick="operationWasChosen()">Addition</a>
 			<a href="" class="box">Subtraction</a>
 			<a href="" class="box">Multiplication</a>
 			<a href="" class="box">Division</a>
