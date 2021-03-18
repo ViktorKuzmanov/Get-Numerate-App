@@ -8,9 +8,15 @@
 		<script></script>
 	</head>
 	<body>
+		<button onclick="goBack()">Go Back</button>
 		<p>What type of question do you want to practise?</p>
 		<p><input type="checkbox" /> What is 20% of 50?</p>
 		<p><input type="checkbox" /> 10 is what % of 50?</p>
 		<p><input type="checkbox" /> 10 is 20% of what?</p>
+		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script>
 	</body>
 </html>
