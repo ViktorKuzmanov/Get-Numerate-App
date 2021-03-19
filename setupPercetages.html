@@ -19,6 +19,12 @@
 			function goBack() {
 				window.history.back();
 			}
+
+			function storePercentagesQuestionsObject() {
+				let percentagesQuestions = { firstQuestion: false, secondQuestion: false, thrirdQuestion: false, fourthQuestion: false };
+				localStorage.setItem("percentagesQuestions", JSON.stringify(percentagesQuestions));
+			}
+			storePercentagesQuestionsObject();
 		</script>
 	</body>
 </html>
