@@ -10,16 +10,25 @@
 	<body>
 		<button onclick="goBack()">Go Back</button>
 		<p>What type of question do you want to practise?</p>
-		<p><input type="checkbox" /> What is 20% of 50?</p>
-		<p><input type="checkbox" /> 10 is what % of 50?</p>
-		<p><input type="checkbox" /> 10 is 20% of what?</p>
-		<p><input type="checkbox" /> All of them</p>
+		<p><input type="checkbox" onchange="checkBoxTapped(this.id)" id="firstQuestion" /> What is 20% of 50?</p>
+		<p><input type="checkbox" onchange="checkBoxTapped(this.id)" id="secondQuestion" /> 10 is what % of 50?</p>
+		<p><input type="checkbox" onchange="checkBoxTapped(this.id)" id="thrirdQuestion" /> 10 is 20% of what?</p>
+		<p><input type="checkbox" onchange="checkBoxTapped(this.id)" id="fourthQuestion" /> All of them</p>
 		<a href="setupGame.html">Next</a>
 		<script>
 			function goBack() {
 				window.history.back();
 			}
+			function checkBoxTapped(idOfCheckbox) {
+				// retrieve and change percentagesQuestions object from local storage
+				const retrievedStringObject = localStorage.getItem("percentagesQuestions");
+				const jsObject = JSON.parse(retrievedStringObject);
+				jsObject[idOfCheckbox] = !jsObject[idOfCheckbox];
 
+				// save changed object in local storage
+				localStorage.setItem("percentagesQuestions", JSON.stringify(jsObject));
+				console.log(localStorage.getItem("percentagesQuestions"));
+			}
 			function storePercentagesQuestionsObject() {
 				let percentagesQuestions = { firstQuestion: false, secondQuestion: false, thrirdQuestion: false, fourthQuestion: false };
 				localStorage.setItem("percentagesQuestions", JSON.stringify(percentagesQuestions));
