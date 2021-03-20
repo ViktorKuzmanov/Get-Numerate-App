@@ -9,13 +9,15 @@
 	</head>
 	<body>
 		<button onclick="goBack()">Go Back</button>
-		<p>I want to practise with</p>
+		<p>I want to practise <span id="operationName"></span> with</p>
 		<input type="number" /> digit and <input type="number" /> digit number
 		<p><a href="game.html">Start</a></p>
 		<script>
 			function goBack() {
 				window.history.back();
 			}
+			var operationNameSpan = document.getElementById("operationName");
+			operationNameSpan.innerText = localStorage.getItem("currentOperation");
 		</script>
 	</body>
 </html>
