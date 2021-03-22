@@ -11,7 +11,7 @@
 		<button onclick="goBack()">Go Back</button>
 		<p>I want to practise <span id="operationName"></span> with</p>
 		<input type="number" id="firstNumDigit" /> digit and <input type="number" id="secondNumDigit" /> digit number
-		<p><a onclick="saveDigitsInStorage()">Start</a></p>
+		<p><a href="game.html" onclick="saveDigitsInStorage()">Start</a></p>
 		<script>
 			function saveDigitsInStorage() {
 				const keyForObject = localStorage.getItem("currentOperation") + "Digits";
