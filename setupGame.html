@@ -10,9 +10,16 @@
 	<body>
 		<button onclick="goBack()">Go Back</button>
 		<p>I want to practise <span id="operationName"></span> with</p>
-		<input type="number" /> digit and <input type="number" /> digit number
-		<p><a href="game.html">Start</a></p>
+		<input type="number" id="firstNumDigit" /> digit and <input type="number" id="secondNumDigit" /> digit number
+		<p><a onclick="saveDigitsInStorage()">Start</a></p>
 		<script>
+			function saveDigitsInStorage() {
+				const keyForObject = localStorage.getItem("currentOperation") + "Digits";
+				const firstDigitInput = document.getElementById("firstNumDigit");
+				const secondDigitInput = document.getElementById("secondNumDigit");
+				const valueForObject = { [firstDigitInput.id]: firstDigitInput.value, [secondDigitInput.id]: secondDigitInput.value };
+				localStorage.setItem(keyForObject, JSON.stringify(valueForObject));
+			}
 			function goBack() {
 				window.history.back();
 			}
