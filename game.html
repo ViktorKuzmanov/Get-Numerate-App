@@ -16,6 +16,9 @@
 			<input id="result" type="number" placeholder="Write result" />
 		</p>
 		<script>
+			// put cursor on result input
+			document.getElementById("result").focus();
+			document.getElementById("result").select();
 			function goBack() {
 				window.history.back();
 			}
