@@ -14,6 +14,16 @@
 			<span id="operation"></span>
 			<span id="num2"></span>
 			<input id="result" type="number" placeholder="Write result" />
+			<input type="button" value="1" onClick="addNumber(this);" />
+			<input type="button" value="2" onClick="addNumber(this);" />
+			<input type="button" value="3" onClick="addNumber(this);" />
+			<input type="button" value="4" onClick="addNumber(this);" />
+			<input type="button" value="5" onClick="addNumber(this);" />
+			<input type="button" value="6" onClick="addNumber(this);" />
+			<input type="button" value="7" onClick="addNumber(this);" />
+			<input type="button" value="8" onClick="addNumber(this);" />
+			<input type="button" value="9" onClick="addNumber(this);" />
+			<input type="button" value="0" onClick="addNumber(this);" />
 		</p>
 		<script>
 			// put cursor on result input
@@ -21,6 +31,9 @@
 			document.getElementById("result").select();
 			function goBack() {
 				window.history.back();
+			}
+			function addNumber(element) {
+				document.getElementById("result").value = document.getElementById("result").value + element.value;
 			}
 		</script>
 	</body>
