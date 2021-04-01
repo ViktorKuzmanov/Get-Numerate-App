@@ -26,6 +26,7 @@
 			<input type="button" value="8" onClick="addNumber(this);" />
 			<input type="button" value="9" onClick="addNumber(this);" />
 			<input type="button" value="0" onClick="addNumber(this);" />
+			<input type="button" value="Done" onClick="checkIfResultIsCorrect()" />
 		</p>
 		<script>
 			// put cursor on result input
@@ -36,6 +37,9 @@
 			}
 			function addNumber(element) {
 				document.getElementById("result").value = document.getElementById("result").value + element.value;
+			}
+			function checkIfResultIsCorrect() {
+				// check if the result of operations or percentage is correct
 			}
 		</script>
 	</body>
