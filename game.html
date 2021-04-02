@@ -30,6 +30,43 @@
 		</p>
 		<script>
 			// put cursor on result input
+			var num1;
+			var num2;
+			function getDigitsAndGenerateRandomNumbers() {
+				// get digits of num1 and num2 from localStorage
+				console.log("object");
+				const currentOperation = localStorage.getItem("currentOperation");
+				const getChosenDigitsString = localStorage.getItem(currentOperation + "Digits");
+				const getChoseDigitsJsObject = JSON.parse(getChosenDigitsString);
+				const num1Digits = getChoseDigitsJsObject["firstNumDigit"];
+				const num2Digits = getChoseDigitsJsObject["secondNumDigit"];
+				num1 = generateNumWithDigits(parseInt(num1Digits));
+				num2 = generateNumWithDigits(parseInt(num2Digits));
+			}
+			function generateNumWithDigits(digits) {
+				var randomNum;
+				switch (digits) {
+					case 1:
+						var max = 10;
+						var min = 1;
+						randomNum = Math.random() * (max - min) + min;
+						break;
+					case 2:
+						var max = 100;
+						var min = 10;
+						randomNum = Math.random() * (max - min) + min;
+						break;
+					case 3:
+						var max = 1000;
+						var min = 100;
+						randomNum = Math.random() * (max - min) + min;
+						break;
+					default:
+						break;
+				}
+				return parseInt(randomNum);
+			}
+
 			document.getElementById("result").focus();
 			document.getElementById("result").select();
 			function goBack() {
@@ -40,6 +77,7 @@
 			}
 			function checkIfResultIsCorrect() {
 				// check if the result of operations or percentage is correct
+				getDigitsAndGenerateRandomNumbers();
 			}
 		</script>
 	</body>
