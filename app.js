@@ -1,9 +1,5 @@
 if ("serviceWorker" in navigator) {
 	window.addEventListener("load", function () {
-		navigator.serviceWorker.register("/sw.js");
+		navigator.serviceWorker.register("/sw.js").then(() => console.log("service worker registered"));
 	});
 }
-
-// if (location.protocol !== "https:") {
-// 	location.replace(`https:${location.href.substring(location.protocol.length)}`);
-// }
