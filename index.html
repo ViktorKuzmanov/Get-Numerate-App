@@ -4,11 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="manifest" href="../js/manifest.json" />
+		<link rel="manifest" href="./js/manifest.json" />
 		<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
 		<meta name="theme-color" content="#f875aa" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT%20Sans">
-		<link rel="stylesheet" href="../css/styles.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
 		<title>Get numerate</title>
 	</head>
 	<body>
@@ -18,7 +18,7 @@
 		<script>
 			if ("serviceWorker" in navigator) {
 					window.addEventListener("load", function () {
-					navigator.serviceWorker.register("../js/sw.js").then(() => console.log("service worker registered"));
+					navigator.serviceWorker.register("./js/sw.js").then(() => console.log("service worker registered"));
 				});
 			}
 		</script>
