@@ -7,17 +7,18 @@
 		<link rel="manifest" href="./js/manifest.json" />
 		<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
 		<meta name="theme-color" content="#f875aa" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT%20Sans">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT%20Sans" />
 		<link rel="stylesheet" href="./css/styles.css" />
 		<title>Get numerate</title>
 	</head>
 	<body>
-		<p><img src="../assets/logo.png" alt="logo" /> <h1>Get numerate</h1> </p>
-		<br>
+		<img src="../assets/logo.png" alt="logo" />
+		<h1>Get numerate</h1>
+		<br />
 		<a href="./choosePractise.html">Get started</a>
 		<script>
 			if ("serviceWorker" in navigator) {
-					window.addEventListener("load", function () {
+				window.addEventListener("load", function () {
 					navigator.serviceWorker.register("./js/sw.js").then(() => console.log("service worker registered"));
 				});
 			}
