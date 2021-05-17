@@ -15,5 +15,12 @@
 		<p><img src="./assets/logo.png" alt="logo" /> <h1>Get numerate</h1> </p>
 		<br>
 		<a href="choosePractise.html">Get started</a>
+		<script>
+			if ("serviceWorker" in navigator) {
+					window.addEventListener("load", function () {
+					navigator.serviceWorker.register("./sw.js").then(() => console.log("service worker registered"));
+				});
+			}
+		</script>
 	</body>
 </html>
