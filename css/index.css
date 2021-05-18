@@ -1,7 +1,12 @@
+body {
+  background-color: #393e46;
+}
+
 h1,
 img {
   display: inline;
   vertical-align: middle;
+  color: #eeeeee;
 }
 
 img {
@@ -18,6 +23,20 @@ h1 {
 p {
   margin: 0px;
   font-size: 3em;
+  font-family: "PT Sans";
+  color: #eeeeee;
+}
+
+#getstarted {
+  background-color: #00adb5;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #eeeeee;
   font-family: "PT Sans";
 }
 

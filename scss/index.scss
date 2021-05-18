@@ -1,10 +1,14 @@
 @import "./general";
 
+body {
+    background-color: $backgroundColor;
+}
 // logo i tekst u ista linija
 h1,
 img {
     display: inline;
     vertical-align: middle;
+    color: $textColor;
 }
 
 img {
@@ -21,6 +25,20 @@ h1 {
 p {
     margin: 0px;
     font-size: 3em;
+    font-family: $fontFamily;
+    color: $textColor;
+}
+
+#getstarted {
+    background-color: $interactionColor;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: $textColor;
     font-family: $fontFamily;
 }
 
