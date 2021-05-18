@@ -1,3 +1,5 @@
+@import "./general";
+
 // logo i tekst u ista linija
 h1,
 img {
@@ -13,5 +15,14 @@ img {
 
 h1 {
     font-family: "PT Sans";
-    font-size: 28px;
+    font-size: 4vw;
+}
+
+p {
+    margin: 0px;
+    font-size: 3em;
+}
+
+div {
+    margin-top: 20px;
 }
