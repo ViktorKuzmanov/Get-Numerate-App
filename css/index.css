@@ -1,26 +1,26 @@
 h1,
 img {
-	display: inline;
-	vertical-align: middle;
+  display: inline;
+  vertical-align: middle;
 }
 
 img {
-	max-height: 30px;
-	max-width: 30px;
-	display: inline;
+  max-height: 30px;
+  max-width: 30px;
+  display: inline;
 }
 
 h1 {
-	font-family: "PT Sans";
-	font-size: 15px;
+  font-family: "" PT Sans "";
+  font-size: 4vw;
 }
 
 p {
-	margin: 0px;
-	font-size: 3em;
+  margin: 0px;
+  font-size: 3em;
 }
 
 div {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=index.css.map */
