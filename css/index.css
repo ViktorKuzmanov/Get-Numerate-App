@@ -11,13 +11,14 @@ img {
 }
 
 h1 {
-  font-family: "" PT Sans "";
+  font-family: "PT Sans";
   font-size: 4vw;
 }
 
 p {
   margin: 0px;
   font-size: 3em;
+  font-family: "PT Sans";
 }
 
 div {
