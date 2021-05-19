@@ -6,12 +6,12 @@ generateRandomNumbersBasedOnDigits();
 updateUIwithQuestion();
 
 function generateRandomNumbersBasedOnDigits() {
-	function checkIfOperationMakesSense(num1, num2) {
+	function checkIfOperationMakesSense(number1, number2) {
 		// Check if operation is possible . You cannot devide by zero or "1 - 20"
-		if (num1 < num2) {
-			var temporaryNum1 = num1;
-			this.num1 = num2;
-			this.num2 = temporaryNum1;
+		if (number1 < number2) {
+			var temporaryNum1 = number1;
+			num1 = number2;
+			num2 = temporaryNum1;
 		}
 	}
 	// get digits of num1 and num2 from localStorage
