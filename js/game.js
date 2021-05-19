@@ -6,6 +6,14 @@ generateRandomNumbersBasedOnDigits();
 updateUIwithQuestion();
 
 function generateRandomNumbersBasedOnDigits() {
+	function checkIfOperationMakesSense(num1, num2) {
+		// Check if operation is possible . You cannot devide by zero or "1 - 20"
+		if (num1 < num2) {
+			var temporaryNum1 = num1;
+			this.num1 = num2;
+			this.num2 = temporaryNum1;
+		}
+	}
 	// get digits of num1 and num2 from localStorage
 	const currentOperation = localStorage.getItem("currentOperation");
 	const getChosenDigitsString = localStorage.getItem(currentOperation + "Digits");
@@ -14,6 +22,7 @@ function generateRandomNumbersBasedOnDigits() {
 	const num2Digits = getChoseDigitsJsObject["secondNumDigit"];
 	num1 = generateOneNumWithDigits(parseInt(num1Digits));
 	num2 = generateOneNumWithDigits(parseInt(num2Digits));
+	checkIfOperationMakesSense(num1, num2);
 	function generateOneNumWithDigits(digits) {
 		var randomNum;
 		switch (digits) {
