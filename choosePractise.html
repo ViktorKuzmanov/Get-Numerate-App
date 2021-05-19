@@ -22,5 +22,12 @@
 			<a href="setupPercetages.html" class="box" name="Percentages" onclick="operationWasChosen(this.name)">Percentages</a>
 			<a href="setupGame.html" class="box" name="All operations" onclick="operationWasChosen(this.name)">All operations</a>
 		</div>
+		<script>
+			function storePercentagesQuestionsObject() {
+				let percentagesQuestions = { firstQuestion: false, secondQuestion: false, thrirdQuestion: false, fourthQuestion: false };
+				localStorage.setItem("percentagesQuestions", JSON.stringify(percentagesQuestions));
+			}
+			storePercentagesQuestionsObject();
+		</script>
 	</body>
 </html>
