@@ -13,6 +13,13 @@ function generateRandomNumbersBasedOnDigits() {
 			num1 = number2;
 			num2 = temporaryNum1;
 		}
+		const currentOperation = localStorage.getItem("currentOperation");
+		if (currentOperation == "Division") {
+			while (num1 % num2 != 0) {
+				// there is remainder between num1 / num2 like 31/7=4.4
+				generateRandomNumbersBasedOnDigits();
+			}
+		}
 	}
 	// get digits of num1 and num2 from localStorage
 	const currentOperation = localStorage.getItem("currentOperation");
