@@ -57,6 +57,46 @@ function generateRandomNumbersBasedOnDigits() {
 	}
 }
 
+function updateUIwithPercentageQuestion() {
+	// zemi gi izvranite prashanja od local storage
+	const chosenPercentageQuestions = localStorage.getItem("percentagesQuestions");
+	const percentagesQuestionsJsObject = JSON.parse(chosenPercentageQuestions);
+	const odbraniPrasanja = [];
+	for (const key in percentagesQuestionsJsObject) {
+		// ako e odbrano nekoe prashaje t.e. e true staj go u array
+		if (percentagesQuestionsJsObject[key]) {
+			odbraniPrasanja.push(key);
+		}
+	}
+	// odberi random prasanje koe kje go postavime od odbranite
+	const randomNum = Math.floor(Math.random() * odbraniPrasanja.length);
+	const randomOdbranoPrashanje = odbraniPrasanja[randomNum];
+
+	const textBefore = document.getElementById("textBefore");
+	const textInMiddle = document.getElementById("textInMiddle");
+	const textAfter = document.getElementById("textAfter");
+	// update ui with izbranoto prashanje
+	switch (randomOdbranoPrashanje) {
+		case "firstQuestion":
+			textBefore.innerText = "What is ";
+			textInMiddle.innerText = "% of";
+			textAfter.innerText = " ?";
+			break;
+		case "secondQuestion":
+			textBefore.innerText = "";
+			textInMiddle.innerText = " is what percent % of ";
+			textAfter.innerText = " ?";
+			break;
+		case "thrirdQuestion":
+			textBefore.innerText = "";
+			textInMiddle.innerText = " is ";
+			textAfter.innerText = "% of what ?";
+			break;
+		default:
+			break;
+	}
+}
+
 function updateUIwithQuestion() {
 	const currentOperation = localStorage.getItem("currentOperation");
 	switch (currentOperation) {
@@ -66,10 +106,9 @@ function updateUIwithQuestion() {
 			updateUINumbersAndOperation(allOperationArray[randomNum]);
 			break;
 		case "Percentages":
-			break;
+			updateUINumbersAndOperation("Percentages");
 		default:
 			// + - * /
-			updateUINumbersAndOperation(currentOperation);
 			break;
 	}
 	function updateUINumbersAndOperation(currentOperation) {
@@ -90,6 +129,9 @@ function updateUIwithQuestion() {
 				break;
 			case "Division":
 				spanTextBefore.innerText = "/";
+				break;
+			case "Percentages":
+				updateUIwithPercentageQuestion();
 				break;
 			default:
 				// + - * /
