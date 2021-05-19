@@ -21,15 +21,17 @@ function generateRandomNumbersBasedOnDigits() {
 			}
 		}
 	}
-	// get digits of num1 and num2 from localStorage
+	// ! 1. get digits of num1 and num2 from localStorage
 	const currentOperation = localStorage.getItem("currentOperation");
 	const getChosenDigitsString = localStorage.getItem(currentOperation + "Digits");
 	const getChoseDigitsJsObject = JSON.parse(getChosenDigitsString);
 	const num1Digits = getChoseDigitsJsObject["firstNumDigit"];
 	const num2Digits = getChoseDigitsJsObject["secondNumDigit"];
+	// ! 2. generate 2 random numbers and chekc if operation makes sense
 	num1 = generateOneNumWithDigits(parseInt(num1Digits));
 	num2 = generateOneNumWithDigits(parseInt(num2Digits));
 	checkIfOperationMakesSense(num1, num2);
+
 	function generateOneNumWithDigits(digits) {
 		var randomNum;
 		switch (digits) {
