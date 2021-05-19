@@ -1,6 +1,10 @@
 // put cursor on result input
 var num1;
 var num2;
+
+generateRandomNumbersBasedOnDigits();
+updateUIwithQuestion();
+
 function generateRandomNumbersBasedOnDigits() {
 	// get digits of num1 and num2 from localStorage
 	const currentOperation = localStorage.getItem("currentOperation");
