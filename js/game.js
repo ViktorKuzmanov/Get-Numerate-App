@@ -35,7 +35,7 @@ function generateRandomNumbersBasedOnDigits() {
 		switch (digits) {
 			case 1:
 				var max = 10;
-				var min = 1;
+				var min = 2;
 				randomNum = Math.random() * (max - min) + min;
 				break;
 			case 2:
