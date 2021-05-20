@@ -70,7 +70,6 @@ function updateUIwithPercentageQuestion() {
 	// odberi random prasanje koe kje go postavime od odbranite
 	const randomNum = Math.floor(Math.random() * odbraniPrasanja.length);
 	const randomOdbranoPrashanje = odbraniPrasanja[randomNum];
-
 	const textBefore = document.getElementById("textBefore");
 	const textInMiddle = document.getElementById("textInMiddle");
 	const textAfter = document.getElementById("textAfter");
@@ -153,12 +152,15 @@ function checkIfResultIsCorrect() {
 	const resultFromUser = Number(document.getElementById("result").value);
 	const currentOperation = localStorage.getItem("currentOperation");
 	if (currentOperation == "Percentages") {
-		// TODO: Proveri za % dali mu e tocno
+		let correctResult = Number(getCorrectResultFromPercentage());
+		if (correctResult == resultFromUser) {
+			console.log("tocno");
+		} else {
+			console.log("ne e tocno");
+		}
 	} else {
 		// proveri za + - * / dali se tocni
 		const correctResult = getCorrectResultFromOperation();
-		console.log("correctResult = " + correctResult);
-		console.log("resultFromUser = " + resultFromUser);
 		if (resultFromUser === correctResult) {
 			console.log("tocno e");
 		} else {
@@ -174,5 +176,26 @@ function checkIfResultIsCorrect() {
 		const num2 = document.getElementById("num2").innerHTML;
 		const operation = document.getElementById("textInMiddle").innerText;
 		return eval(num1 + operation + num2);
+	}
+
+	function getCorrectResultFromPercentage() {
+		const num1 = Number(document.getElementById("num1").innerHTML);
+		const num2 = Number(document.getElementById("num2").innerHTML);
+		const textInMiddle = document.getElementById("textInMiddle").innerText;
+		var result = "";
+		switch (textInMiddle) {
+			case "% of":
+				result = (num2 * num1) / 100;
+				break;
+			case "is what percent % of ":
+				result = (100 * num1) / num2;
+				break;
+			case "is ":
+				result = (num1 * 100) / num2;
+				break;
+			default:
+				break;
+		}
+		return result;
 	}
 }
