@@ -31,7 +31,6 @@ function generateRandomNumbersBasedOnDigits() {
 	num1 = generateOneNumWithDigits(parseInt(num1Digits));
 	num2 = generateOneNumWithDigits(parseInt(num2Digits));
 	checkIfOperationMakesSense(num1, num2);
-
 	function generateOneNumWithDigits(digits) {
 		var randomNum;
 		switch (digits) {
@@ -109,6 +108,7 @@ function updateUIwithQuestion() {
 			updateUINumbersAndOperation("Percentages");
 		default:
 			// + - * /
+			updateUINumbersAndOperation(currentOperation);
 			break;
 	}
 	function updateUINumbersAndOperation(currentOperation) {
