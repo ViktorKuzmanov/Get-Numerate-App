@@ -150,6 +150,29 @@ function addNumber(element) {
 }
 function checkIfResultIsCorrect() {
 	// check if the result of operations or percentage is correct
+	const resultFromUser = Number(document.getElementById("result").value);
+	const currentOperation = localStorage.getItem("currentOperation");
+	if (currentOperation == "Percentages") {
+		// TODO: Proveri za % dali mu e tocno
+	} else {
+		// proveri za + - * / dali se tocni
+		const correctResult = getCorrectResultFromOperation();
+		console.log("correctResult = " + correctResult);
+		console.log("resultFromUser = " + resultFromUser);
+		if (resultFromUser === correctResult) {
+			console.log("tocno e");
+		} else {
+			console.log("ne e tocno");
+		}
+	}
+	// generate another question and update ui
 	generateRandomNumbersBasedOnDigits();
 	updateUIwithQuestion();
+
+	function getCorrectResultFromOperation() {
+		const num1 = document.getElementById("num1").innerHTML;
+		const num2 = document.getElementById("num2").innerHTML;
+		const operation = document.getElementById("textInMiddle").innerText;
+		return eval(num1 + operation + num2);
+	}
 }
