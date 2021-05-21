@@ -4,9 +4,28 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<title>Game</title>
 	</head>
 	<body>
+		<!-- ! Check result modal -->
+		<div class="container">
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Modal Header</h4>
+						</div>
+						<div class="modal-body">
+							<p class="modalText">Some text in the modal.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<button onclick="goBack()">Go Back</button>
 		<p>Game page</p>
 		<p>
@@ -30,6 +49,13 @@
 			<input type="button" value="0" onClick="addNumber(this);" />
 			<input type="button" value="Done" onClick="checkIfResultIsCorrect()" />
 		</p>
+		<button onclick="showModal()">aaa</button>
+		<script>
+			function showModal() {
+				console.log("object");
+				$("#myModal").modal("toggle");
+			}
+		</script>
 		<script src="./js/game.js"></script>
 	</body>
 </html>
