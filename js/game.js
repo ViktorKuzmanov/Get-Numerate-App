@@ -148,7 +148,7 @@ function addNumber(element) {
 	document.getElementById("result").value = document.getElementById("result").value + element.value;
 }
 function checkIfResultIsCorrect() {
-	$("#myModal").modal("toggle");
+	const modalDescription = document.getElementsByClassName("modalDescription")[0];
 	// check if the result of operations or percentage is correct
 	const resultFromUser = Number(document.getElementById("result").value);
 	const currentOperation = localStorage.getItem("currentOperation");
@@ -156,16 +156,20 @@ function checkIfResultIsCorrect() {
 		let correctResult = Number(getCorrectResultFromPercentage());
 		if (correctResult == resultFromUser) {
 			console.log("tocno");
+			modalDescription.innerText = "tocno";
 		} else {
 			console.log("ne e tocno");
+			modalDescription.innerText = "ne e tocno";
 		}
 	} else {
 		// proveri za + - * / dali se tocni
 		const correctResult = getCorrectResultFromOperation();
 		if (resultFromUser === correctResult) {
 			console.log("tocno e");
+			modalDescription.innerText = "tocno";
 		} else {
 			console.log("ne e tocno");
+			modalDescription.innerText = "ne e tocno";
 		}
 	}
 	// generate another question and update ui
@@ -199,4 +203,5 @@ function checkIfResultIsCorrect() {
 		}
 		return result;
 	}
+	$("#myModal").modal("toggle");
 }
