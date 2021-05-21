@@ -148,6 +148,7 @@ function addNumber(element) {
 	document.getElementById("result").value = document.getElementById("result").value + element.value;
 }
 function checkIfResultIsCorrect() {
+	$("#myModal").modal("toggle");
 	// check if the result of operations or percentage is correct
 	const resultFromUser = Number(document.getElementById("result").value);
 	const currentOperation = localStorage.getItem("currentOperation");
