@@ -148,28 +148,23 @@ function addNumber(element) {
 	document.getElementById("result").value = document.getElementById("result").value + element.value;
 }
 function checkIfResultIsCorrect() {
-	const modalDescription = document.getElementsByClassName("modalDescription")[0];
 	// check if the result of operations or percentage is correct
 	const resultFromUser = Number(document.getElementById("result").value);
 	const currentOperation = localStorage.getItem("currentOperation");
 	if (currentOperation == "Percentages") {
 		let correctResult = Number(getCorrectResultFromPercentage());
 		if (correctResult == resultFromUser) {
-			console.log("tocno");
-			modalDescription.innerText = "tocno";
+			showModal("Correct", correctResult, resultFromUser);
 		} else {
-			console.log("ne e tocno");
-			modalDescription.innerText = "ne e tocno";
+			showModal("Wrong", correctResult, resultFromUser);
 		}
 	} else {
 		// proveri za + - * / dali se tocni
 		const correctResult = getCorrectResultFromOperation();
 		if (resultFromUser === correctResult) {
-			console.log("tocno e");
-			modalDescription.innerText = "tocno";
+			showModal("Correct", correctResult, resultFromUser);
 		} else {
-			console.log("ne e tocno");
-			modalDescription.innerText = "ne e tocno";
+			showModal("Wrong", correctResult, resultFromUser);
 		}
 	}
 	// generate another question and update ui
@@ -203,5 +198,29 @@ function checkIfResultIsCorrect() {
 		}
 		return result;
 	}
-	$("#myModal").modal("toggle");
+	function showModal(correctOrWrong, correctResult, resultFromUser) {
+		const successAlert = document.getElementById("successAlert");
+		const dangerAlert = document.getElementById("dangerAlert");
+		const modalTitle = document.getElementsByClassName("modal-title")[0];
+		const modalDescription = document.getElementsByClassName("modalDescription")[0];
+		const textBefore = document.getElementById("textBefore").innerText;
+		const textInMiddle = document.getElementById("textInMiddle").innerText;
+		const textAfter = document.getElementById("textAfter").innerText;
+		const num1 = document.getElementById("num1").innerText;
+		const num2 = document.getElementById("num2").innerText;
+		if (correctOrWrong === "Correct") {
+			modalTitle.textContent = "Correct";
+			dangerAlert.style.display = "none";
+			successAlert.style.display = "block";
+			successAlert.innerText = textBefore + num1 + textInMiddle + num2 + textAfter + " = " + correctResult;
+			modalDescription.textContent = "Good Job!";
+		} else {
+			modalTitle.textContent = "Wrong";
+			dangerAlert.style.display = "block";
+			successAlert.style.display = "none";
+			dangerAlert.innerText = textBefore + num1 + textInMiddle + num2 + textAfter + " = " + resultFromUser;
+			modalDescription.textContent = "Correct answer is " + correctResult;
+		}
+		$("#myModal").modal("toggle");
+	}
 }
