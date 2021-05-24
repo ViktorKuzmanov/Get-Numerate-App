@@ -43,16 +43,30 @@ h1 {
 }
 
 // Get started button
-#getstarted {
+.getstarted {
     background-color: $interactionColor;
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
     display: block;
+    width: 200px;
+    font-size: 28px;
+    text-align: center;
+    cursor: pointer;
+    transition: ease-out 0.4s;
+    box-shadow: inset 0 0 0 0 $interactionColor;
+    outline: none;
+    a {
+        text-decoration: none;
+        color: $textColor;
+        font-family: $fontFamily;
+    }
 }
 
-a {
-    text-decoration: none;
-    color: $textColor;
-    font-family: $fontFamily;
+.getstarted:hover {
+    box-shadow: inset 200px 0 0 0 #5fc314;
+    cursor: pointer;
+    a {
+        color: black;
+    }
 }
