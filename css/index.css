@@ -1,46 +1,44 @@
 body {
-  background-color: #393e46;
+	background-color: #393e46;
 }
 
 h1,
 img {
-  display: inline;
-  vertical-align: middle;
-  color: #eeeeee;
+	display: inline;
+	vertical-align: middle;
+	color: #eeeeee;
 }
 
-img {
-  max-height: 30px;
-  max-width: 30px;
-  display: inline;
+.logo {
+	width: 30vh;
 }
 
 h1 {
-  font-family: "PT Sans";
-  font-size: 4vw;
+	font-family: "PT Sans";
+	font-size: 4vw;
 }
 
 p {
-  margin: 0px;
-  font-size: 3em;
-  font-family: "PT Sans";
-  color: #eeeeee;
+	margin: 0px;
+	font-size: 3em;
+	font-family: "PT Sans";
+	color: #eeeeee;
 }
 
 #getstarted {
-  background-color: #00adb5;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
+	background-color: #00adb5;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
 }
 
 a {
-  text-decoration: none;
-  color: #eeeeee;
-  font-family: "PT Sans";
+	text-decoration: none;
+	color: #eeeeee;
+	font-family: "PT Sans";
 }
 
 div {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 /*# sourceMappingURL=index.css.map */
