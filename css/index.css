@@ -1,44 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
-	background-color: #393e46;
-}
-
-h1,
-img {
-	display: inline;
-	vertical-align: middle;
-	color: #eeeeee;
-}
-
-.logo {
-	width: 30vh;
+  background-color: #393e46;
 }
 
 h1 {
-	font-family: "PT Sans";
-	font-size: 4vw;
+  font-family: "PT Sans";
+  font-size: 4vw;
 }
 
 p {
-	margin: 0px;
-	font-size: 3em;
-	font-family: "PT Sans";
-	color: #eeeeee;
+  margin: 0px;
+  font-size: 3em;
+  font-family: "PT Sans";
+  color: #eeeeee;
 }
 
 #getstarted {
-	background-color: #00adb5;
-	border: none;
-	border-radius: 5px;
-	padding: 5px 10px;
+  background-color: #00adb5;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 a {
-	text-decoration: none;
-	color: #eeeeee;
-	font-family: "PT Sans";
+  text-decoration: none;
+  color: #eeeeee;
+  font-family: "PT Sans";
 }
 
-div {
-	margin-top: 20px;
+.logo {
+  width: 35vh;
+}
+
+.container {
+  height: 100vh;
+  border: 1px solid yellowgreen;
+  margin: 0px;
+  padding: 10px 75px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=index.css.map */

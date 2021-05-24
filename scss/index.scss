@@ -1,20 +1,12 @@
 @import "./general";
 
-body {
-    background-color: $backgroundColor;
-}
-// logo i tekst u ista linija
-h1,
-img {
-    display: inline;
-    vertical-align: middle;
-    color: $textColor;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-img {
-    max-height: 30px;
-    max-width: 30px;
-    display: inline;
+body {
+    background-color: $backgroundColor;
 }
 
 h1 {
@@ -42,6 +34,14 @@ a {
     font-family: $fontFamily;
 }
 
-div {
-    margin-top: 20px;
+.logo {
+    width: 35vh;
+}
+
+.container {
+    height: 100vh;
+    border: 1px solid yellowgreen;
+    margin: 0px;
+    padding: 10px 75px;
+    box-sizing: border-box;
 }
