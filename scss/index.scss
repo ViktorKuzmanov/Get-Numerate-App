@@ -11,6 +11,7 @@ body {
 
 .logo {
     width: 30vh;
+    display: block;
 }
 
 .container {
@@ -19,6 +20,13 @@ body {
     margin: 0px;
     padding: 10px 75px;
     box-sizing: border-box;
+}
+
+.mainImage {
+    width: 400px;
+    padding: 60px;
+    border-radius: 20%;
+    float: right;
 }
 
 h1 {
@@ -31,6 +39,7 @@ h1 {
     font-size: 6vw;
     font-family: $fontFamily;
     color: $textColor;
+    display: inline-block;
 }
 
 // Get started button
@@ -39,6 +48,7 @@ h1 {
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
+    display: block;
 }
 
 a {
