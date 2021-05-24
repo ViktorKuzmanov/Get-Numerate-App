@@ -7,14 +7,27 @@ body {
   background-color: #393e46;
 }
 
+.logo {
+  width: 30vh;
+}
+
+.container {
+  height: 100vh;
+  border: 1px solid yellowgreen;
+  margin: 0px;
+  padding: 10px 75px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 h1 {
   font-family: "PT Sans";
   font-size: 4vw;
 }
 
-p {
-  margin: 0px;
-  font-size: 3em;
+.headline {
+  padding: 60px 0px;
+  font-size: 6vw;
   font-family: "PT Sans";
   color: #eeeeee;
 }
@@ -30,18 +43,5 @@ a {
   text-decoration: none;
   color: #eeeeee;
   font-family: "PT Sans";
-}
-
-.logo {
-  width: 35vh;
-}
-
-.container {
-  height: 100vh;
-  border: 1px solid yellowgreen;
-  margin: 0px;
-  padding: 10px 75px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 /*# sourceMappingURL=index.css.map */
