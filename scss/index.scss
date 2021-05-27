@@ -17,26 +17,20 @@ body {
 .container {
     height: 100vh;
     border: 1px solid yellowgreen;
-    margin: 0px;
-    padding: 10px 75px;
+    padding: 10px 35px;
     box-sizing: border-box;
 }
 
 .mainImage {
-    width: 400px;
-    padding: 60px;
-    border-radius: 20%;
-    float: right;
-}
-
-h1 {
-    font-family: $fontFamily;
-    font-size: 4vw;
+    // make image same width as viewport - padding left and right on container
+    width: calc(100vw - 70px);
+    border-radius: 10%;
+    display: block;
 }
 
 .headline {
-    padding: 60px 0px;
-    font-size: 6vw;
+    padding: 20px 0px;
+    font-size: 40px;
     font-family: $fontFamily;
     color: $textColor;
     display: inline-block;
@@ -46,16 +40,18 @@ h1 {
 .getstarted {
     background-color: $interactionColor;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 5px 10px;
     display: block;
-    width: 200px;
+    width: calc(100vw - 70px);
     font-size: 28px;
     text-align: center;
     cursor: pointer;
     transition: ease-out 0.4s;
     box-shadow: inset 0 0 0 0 $interactionColor;
     outline: none;
+    position: fixed;
+    bottom: 20px;
     a {
         text-decoration: none;
         color: $textColor;
