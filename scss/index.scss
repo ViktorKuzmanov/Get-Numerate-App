@@ -3,15 +3,11 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
     background-color: $backgroundColor;
-}
-
-.logo {
-    width: 25vh;
-    display: block;
 }
 
 .container {
@@ -21,48 +17,24 @@ body {
     box-sizing: border-box;
 }
 
-.mainImage {
-    // make image same width as viewport - padding left and right on container
-    width: calc(100vw - 70px);
-    border-radius: 10%;
-    display: block;
-}
-
-.headline {
-    padding: 20px 0px;
-    font-size: 40px;
-    font-family: $fontFamily;
-    color: $textColor;
-    display: inline-block;
-}
-
-// Get started button
-.getstarted {
-    background-color: $interactionColor;
-    border: none;
-    border-radius: 15px;
-    padding: 5px 10px;
-    display: block;
-    width: calc(100vw - 70px);
-    font-size: 28px;
-    text-align: center;
-    cursor: pointer;
-    transition: ease-out 0.4s;
-    box-shadow: inset 0 0 0 0 $interactionColor;
-    outline: none;
-    position: fixed;
-    bottom: 20px;
-    a {
-        text-decoration: none;
-        color: $textColor;
-        font-family: $fontFamily;
+.firstHalfDiv {
+    border: 2px solid rgb(224, 0, 168);
+    height: calc(50vh - 10px);
+    box-sizing: border-box;
+    .logo {
+        width: 25vh;
+        display: block;
     }
-}
-
-.getstarted:hover {
-    box-shadow: inset 200px 0 0 0 #5fc314;
-    cursor: pointer;
-    a {
-        color: black;
+    .headline {
+        padding: 20px 0px;
+        font-size: 40px;
+        font-family: $fontFamily;
+        color: $textColor;
+        display: inline-block;
+    }
+    #tipsAndTricks {
+        font-size: 23px;
+        font-family: $fontFamily;
+        color: $textColor;
     }
 }
