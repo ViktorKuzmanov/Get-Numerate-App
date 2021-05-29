@@ -18,7 +18,7 @@ body {
 }
 
 .firstHalfDiv {
-    border: 2px solid rgb(224, 0, 168);
+    // border: 2px solid rgb(224, 0, 168);
     height: calc(50vh - 10px);
     box-sizing: border-box;
     .logo {
@@ -36,5 +36,32 @@ body {
         font-size: 23px;
         font-family: $fontFamily;
         color: $textColor;
+    }
+}
+
+.mainImage {
+    width: calc(100vw - 70px);
+    border-radius: 15%;
+    display: block;
+    position: fixed;
+    bottom: calc(50vh - calc(100vw - 120px));
+}
+
+.getstarted {
+    background-color: #00adb5;
+    border: none;
+    border-radius: 15px;
+    padding: 1px 10px;
+    width: calc(100vw - 70px);
+    font-size: 28px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    position: fixed;
+    bottom: 30px;
+    a {
+        text-decoration: none;
+        color: $textColor;
+        font-family: $fontFamily;
     }
 }

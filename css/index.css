@@ -18,7 +18,6 @@ body {
 }
 
 .firstHalfDiv {
-  border: 2px solid #e000a8;
   height: calc(50vh - 10px);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -41,5 +40,33 @@ body {
   font-size: 23px;
   font-family: "PT Sans";
   color: #eeeeee;
+}
+
+.mainImage {
+  width: calc(100vw - 70px);
+  border-radius: 15%;
+  display: block;
+  position: fixed;
+  bottom: calc(50vh - calc(100vw - 120px));
+}
+
+.getstarted {
+  background-color: #00adb5;
+  border: none;
+  border-radius: 15px;
+  padding: 1px 10px;
+  width: calc(100vw - 70px);
+  font-size: 28px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  position: fixed;
+  bottom: 30px;
+}
+
+.getstarted a {
+  text-decoration: none;
+  color: #eeeeee;
+  font-family: "PT Sans";
 }
 /*# sourceMappingURL=index.css.map */
