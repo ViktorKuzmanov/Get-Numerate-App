@@ -40,11 +40,14 @@ body {
 }
 
 .mainImage {
-    width: calc(100vw - 70px);
+    max-width: calc(100vw - 70px);
+    max-height: 35vh;
+    width: auto;
+    height: auto;
     border-radius: 15%;
     display: block;
     position: fixed;
-    bottom: calc(50vh - calc(100vw - 120px));
+    bottom: 80px;
 }
 
 .getstarted {
