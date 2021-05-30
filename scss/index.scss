@@ -12,7 +12,6 @@ body {
 
 .container {
     height: 100vh;
-    border: 1px solid yellowgreen;
     padding: 10px 35px;
     box-sizing: border-box;
 }
@@ -62,9 +61,30 @@ body {
     outline: none;
     position: fixed;
     bottom: 30px;
+    left: 35px;
     a {
         text-decoration: none;
         color: $textColor;
         font-family: $fontFamily;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .mainImage {
+        position: static;
+        float: right;
+        max-height: 45vh;
+        margin-top: 40px;
+    }
+    .getstarted {
+        width: 250px;
+        position: fixed;
+        bottom: 80px;
+        left: 50px;
+    }
+    .firstHalfDiv {
+        .headline {
+            font-size: 80px;
+        }
     }
 }
