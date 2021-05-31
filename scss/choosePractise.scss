@@ -24,16 +24,16 @@ body {
     height: 80%;
     padding: 10px;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
 }
 
 .box {
     border: 1px solid #b4b220;
-    width: 100px;
-    height: 100px;
+    width: 30vw;
+    height: 30vw;
     color: white;
     margin: 20px;
     flex: 1;
