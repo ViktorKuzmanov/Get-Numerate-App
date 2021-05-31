@@ -6,7 +6,11 @@ body {
 
 #paragraphOne {
   text-align: center;
-  font-size: xx-large;
+  font-size: 40px;
+  color: #eeeeee;
+  font-family: "PT Sans";
+  padding: 1px 10px;
+  margin: 0;
 }
 
 .container {

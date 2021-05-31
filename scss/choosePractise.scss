@@ -8,7 +8,11 @@ body {
 
 #paragraphOne {
     text-align: center;
-    font-size: xx-large;
+    font-size: $mobileHeadlineFontSize;
+    color: $textColor;
+    font-family: $fontFamily;
+    padding: 1px 10px;
+    margin: 0;
 }
 
 .container {
