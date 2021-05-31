@@ -39,5 +39,28 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  position: relative;
+  border-radius: 10%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.box a {
+  background-color: white;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: "PT Sans";
+  position: absolute;
+  bottom: 5px;
+}
+
+.box img {
+  width: 85%;
+  margin: 0px auto;
+  height: auto;
+  display: block;
 }
 /*# sourceMappingURL=choosePractise.css.map */

@@ -37,4 +37,25 @@ body {
     color: white;
     margin: 20px;
     flex: 1;
+    position: relative;
+    border-radius: 10%;
+    background-color: white;
+    overflow: hidden;
+    a {
+        background-color: white;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-family: $fontFamily;
+        position: absolute;
+        bottom: 5px;
+    }
+    img {
+        width: 85%;
+        margin: 0px auto;
+        height: auto;
+        display: block;
+    }
 }

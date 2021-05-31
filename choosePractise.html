@@ -15,13 +15,15 @@
 	<body>
 		<p id="paragraphOne">What do you want to practise today?</p>
 		<div class="container">
-			<a href="setupGame.html" class="box" name="Addition" onclick="operationWasChosen(this.name)">Addition</a>
-			<a href="setupGame.html" class="box" name="Subtraction" onclick="operationWasChosen(this.name)">Subtraction</a>
-			<a href="setupGame.html" class="box" name="Multiplication" onclick="operationWasChosen(this.name)">Multiplication</a>
-			<a href="setupGame.html" class="box" name="Division" onclick="operationWasChosen(this.name)">Division</a>
-			<a href="setupPercetages.html" class="box" name="Percentages" onclick="operationWasChosen(this.name)">Percentages</a>
-			<a href="setupGame.html" class="box" name="All operations" onclick="operationWasChosen(this.name)">All operations</a>
-		</div>
+			<div class="box">
+				<img src="./assets/additionOperation.png" alt="additionimage">
+				<a href="setupGame.html" name="Addition" onclick="operationWasChosen(this.name)">Addition</a>
+			</div>
+			<div class="box"><a href="setupGame.html" name="Subtraction" onclick="operationWasChosen(this.name)">Subtraction</a></div>
+			<div class="box"><a href="setupGame.html" name="Multiplication" onclick="operationWasChosen(this.name)">Multiplication</a></div>
+			<div class="box"><a href="setupGame.html" name="Division" onclick="operationWasChosen(this.name)">Division</a></div>
+			<div class="box"><a href="setupPercetages.html" name="Percentages" onclick="operationWasChosen(this.name)">Percentages</a></div>
+			<div class="box"><adiv href="setupGame.html" name="All operations" onclick="operationWasChosen(this.name)">All operations</adiv>
 		<script>
 			function storePercentagesQuestionsObject() {
 				let percentagesQuestions = { firstQuestion: false, secondQuestion: false, thrirdQuestion: false, fourthQuestion: false };
