@@ -16,14 +16,29 @@
 		<p id="paragraphOne">What do you want to practise today?</p>
 		<div class="container">
 			<div class="box">
-				<img src="./assets/operationImages/additionOperation.png" alt="additionimage">
+				<img src="./assets/operationImages/additionOperation.png" alt="addition image">
 				<a href="setupGame.html" name="Addition" onclick="operationWasChosen(this.name)">Addition</a>
 			</div>
-			<div class="box"><a href="setupGame.html" name="Subtraction" onclick="operationWasChosen(this.name)">Subtraction</a></div>
-			<div class="box"><a href="setupGame.html" name="Multiplication" onclick="operationWasChosen(this.name)">Multiplication</a></div>
-			<div class="box"><a href="setupGame.html" name="Division" onclick="operationWasChosen(this.name)">Division</a></div>
-			<div class="box"><a href="setupPercetages.html" name="Percentages" onclick="operationWasChosen(this.name)">Percentages</a></div>
-			<div class="box"><adiv href="setupGame.html" name="All operations" onclick="operationWasChosen(this.name)">All operations</adiv>
+			<div class="box">
+				<img src="./assets/operationImages/subtractionOperation.png" alt="subtraction image">
+				<a href="setupGame.html" name="Subtraction" onclick="operationWasChosen(this.name)">Subtraction</a>
+			</div>
+			<div class="box">
+				<img src="./assets/operationImages/multiplicationOperation.png" alt="multiply image">
+				<a href="setupGame.html" name="Multiplication" onclick="operationWasChosen(this.name)">Multiplication</a>
+			</div>
+			<div class="box">
+				<img src="./assets/operationImages/divisionOperation.png" alt="division image">
+				<a href="setupGame.html" name="Division" onclick="operationWasChosen(this.name)">Division</a>
+			</div>
+			<div class="box">
+				<img src="./assets/operationImages/percentageOperation.png" alt="percentage image">
+				<a href="setupPercetages.html" name="Percentages" onclick="operationWasChosen(this.name)">Percentages</a>
+			</div>
+			<div class="box">
+				<img src="./assets/operationImages/everythingOperation.png" alt="all operations image">
+				<a href="setupGame.html" name="All operations" onclick="operationWasChosen(this.name)">All operations</a>
+			</div>
 		<script>
 			function storePercentagesQuestionsObject() {
 				let percentagesQuestions = { firstQuestion: false, secondQuestion: false, thrirdQuestion: false, fourthQuestion: false };
