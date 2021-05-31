@@ -1,8 +1,9 @@
+@import "./general";
+
 html,
 body {
     height: 100%;
-    box-sizing: border-box;
-    background-color: aquamarine;
+    background-color: $backgroundColor;
 }
 
 #paragraphOne {
@@ -26,9 +27,10 @@ body {
 }
 
 .box {
-    border: 1px solid #7037bb;
+    border: 1px solid #b4b220;
     width: 100px;
     height: 100px;
+    color: white;
     margin: 20px;
     flex: 1;
 }
