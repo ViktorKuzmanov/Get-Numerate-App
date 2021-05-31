@@ -1,34 +1,47 @@
 html,
 body {
-	height: 100%;
-	box-sizing: border-box;
-	background-color: aquamarine;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: aquamarine;
 }
 
 #paragraphOne {
-	text-align: center;
-	font-size: xx-large;
+  text-align: center;
+  font-size: xx-large;
 }
 
 .container {
-	border: 3px solid #73ad21;
-	position: fixed;
-	bottom: 0;
-	margin: 0 auto;
-	width: 95%;
-	height: 80%;
-	padding: 10px;
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
+  border: 3px solid #73ad21;
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  width: 95%;
+  height: 80%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .box {
-	border: 1px solid #7037bb;
-	width: 100px;
-	height: 100px;
-	margin: 20px;
-	flex: 1;
+  border: 1px solid #7037bb;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
+/*# sourceMappingURL=choosePractise.css.map */
