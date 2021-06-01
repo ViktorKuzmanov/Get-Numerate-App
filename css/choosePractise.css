@@ -62,4 +62,17 @@ body {
   height: auto;
   display: block;
 }
+
+@media only screen and (min-width: 480px) and (max-width: 2024px) {
+  .container {
+    padding: 30px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+  }
+  .box {
+    width: 15vw;
+    height: 15vw;
+  }
+}
 /*# sourceMappingURL=choosePractise.css.map */
