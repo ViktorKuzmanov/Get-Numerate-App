@@ -50,23 +50,11 @@ body {
 }
 
 .getstarted {
-    background-color: #00adb5;
-    border: none;
-    border-radius: 15px;
-    padding: 1px 10px;
     width: calc(100vw - 70px);
-    font-size: 28px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
     position: fixed;
     bottom: 30px;
     left: 35px;
-    a {
-        text-decoration: none;
-        color: $textColor;
-        font-family: $fontFamily;
-    }
+    @include greenButtonStyle;
 }
 
 @media only screen and (min-width: 600px) {

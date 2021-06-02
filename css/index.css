@@ -53,18 +53,17 @@ body {
 }
 
 .getstarted {
-  background-color: #00adb5;
-  border: none;
-  border-radius: 15px;
-  padding: 1px 10px;
   width: calc(100vw - 70px);
-  font-size: 28px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
   position: fixed;
   bottom: 30px;
   left: 35px;
+  background-color: #00adb5;
+  border: none;
+  border-radius: 10px;
+  padding: 1px 10px;
+  font-size: 28px;
+  cursor: pointer;
+  outline: none;
 }
 
 .getstarted a {

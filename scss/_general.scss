@@ -3,6 +3,20 @@ $backgroundColor: #393e46;
 $textColor: #eeeeee;
 $fontFamily: "PT Sans";
 
-// mobile design global variables (used in multiple screens):
+@mixin greenButtonStyle() {
+    background-color: $interactionColor;
+    border: none;
+    border-radius: 10px;
+    padding: 1px 10px;
+    font-size: 28px;
+    cursor: pointer;
+    outline: none;
+    a {
+        text-decoration: none;
+        color: $textColor;
+        font-family: $fontFamily;
+    }
+}
 
+// mobile design global variables (used in multiple screens):
 $mobileHeadlineFontSize: 40px;
