@@ -8,7 +8,9 @@
 		<title>Setup game</title>
 	</head>
 	<body>
-		<button onclick="goBack()">Go Back</button>
+		<div id="navbar">
+			<button id="backButton" onclick="goBack()"><img src="./assets/goBack.jpg" alt="buton image" /></button>
+		</div>
 		<p>What type of question do you want to practise?</p>
 		<p><input type="checkbox" onchange="checkBoxTapped(this.id)" id="firstQuestion" /> What is 20% of 50?</p>
 		<p><input type="checkbox" onchange="checkBoxTapped(this.id)" id="secondQuestion" /> 10 is what % of 50?</p>

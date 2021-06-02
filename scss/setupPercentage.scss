@@ -8,6 +8,19 @@ body {
     background-color: $backgroundColor;
 }
 
+#navbar {
+    height: 50px;
+    background-color: $navbarBackgroundColor;
+    #backButton {
+        background-color: $backgroundColor;
+        border: none;
+        padding: 0;
+        img {
+            height: 50px;
+        }
+    }
+}
+
 #next {
     @include greenButtonStyle;
 }

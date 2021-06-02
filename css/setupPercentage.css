@@ -6,6 +6,21 @@ body {
   background-color: #393e46;
 }
 
+#navbar {
+  height: 50px;
+  background-color: #2d323b;
+}
+
+#navbar #backButton {
+  background-color: #393e46;
+  border: none;
+  padding: 0;
+}
+
+#navbar #backButton img {
+  height: 50px;
+}
+
 #next {
   background-color: #00adb5;
   border: none;
