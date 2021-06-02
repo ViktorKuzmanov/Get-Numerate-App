@@ -54,6 +54,7 @@ body {
 
 .getstarted {
   width: calc(100vw - 70px);
+  max-width: 300px;
   position: fixed;
   bottom: 30px;
   left: 35px;
