@@ -1,5 +1,9 @@
 @import "./general";
 
+* {
+    color: $textColor;
+}
+
 body {
     background-color: $backgroundColor;
 }
