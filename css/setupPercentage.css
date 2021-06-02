@@ -8,13 +8,24 @@ body {
 
 #navbar {
   height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #2d323b;
 }
 
 #navbar #backButton {
   background-color: #393e46;
   border: none;
+  position: absolute;
   padding: 0;
+  left: 0;
 }
 
 #navbar #backButton img {
