@@ -3,3 +3,7 @@
 body {
     background-color: $backgroundColor;
 }
+
+#next {
+    @include greenButtonStyle;
+}

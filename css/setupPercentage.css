@@ -1,4 +1,20 @@
 body {
   background-color: #393e46;
 }
+
+#next {
+  background-color: #00adb5;
+  border: none;
+  border-radius: 10px;
+  padding: 1px 10px;
+  font-size: 28px;
+  cursor: pointer;
+  outline: none;
+}
+
+#next a {
+  text-decoration: none;
+  color: #eeeeee;
+  font-family: "PT Sans";
+}
 /*# sourceMappingURL=setupPercentage.css.map */
