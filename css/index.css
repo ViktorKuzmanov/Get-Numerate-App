@@ -53,18 +53,19 @@ body {
 }
 
 .getstarted {
-  width: calc(100vw - 70px);
-  max-width: 300px;
-  position: fixed;
-  bottom: 30px;
-  left: 35px;
   background-color: #00adb5;
   border: none;
   border-radius: 10px;
   padding: 1px 10px;
   font-size: 28px;
+  width: 200px;
   cursor: pointer;
   outline: none;
+  width: calc(100vw - 70px);
+  max-width: 300px;
+  position: fixed;
+  bottom: 30px;
+  left: 35px;
 }
 
 .getstarted a {

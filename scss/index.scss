@@ -50,12 +50,12 @@ body {
 }
 
 .getstarted {
+    @include greenButtonStyle;
     width: calc(100vw - 70px);
     max-width: 300px;
     position: fixed;
     bottom: 30px;
     left: 35px;
-    @include greenButtonStyle;
 }
 
 @media only screen and (min-width: 600px) {
