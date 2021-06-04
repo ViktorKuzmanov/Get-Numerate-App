@@ -30,6 +30,10 @@ body {
 }
 
 .flexContainer {
+    input[type="checkbox"] {
+        transform: scale(1.5);
+        vertical-align: middle;
+    }
     display: flex;
     flex-direction: column;
     margin-left: 10px;
@@ -54,6 +58,7 @@ body {
         text-align: center;
     }
 }
+
 @media only screen and (min-width: 768px) {
     #navbar {
         label {
@@ -71,6 +76,10 @@ body {
         }
     }
     .flexContainer {
+        input[type="checkbox"] {
+            transform: scale(2);
+            vertical-align: middle;
+        }
         #question {
             flex: 1;
             margin-top: 50px;

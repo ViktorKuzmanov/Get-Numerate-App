@@ -50,6 +50,12 @@ body {
   height: 80vh;
 }
 
+.flexContainer input[type="checkbox"] {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  vertical-align: middle;
+}
+
 .flexContainer #question {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -101,6 +107,11 @@ body {
   }
   #navbar #backButton img {
     height: 50px;
+  }
+  .flexContainer input[type="checkbox"] {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    vertical-align: middle;
   }
   .flexContainer #question {
     -webkit-box-flex: 1;
