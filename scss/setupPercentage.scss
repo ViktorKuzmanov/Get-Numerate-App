@@ -26,7 +26,23 @@ body {
     }
 }
 
-#next {
-    @include greenButtonStyle;
-    text-decoration: none;
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 80vh;
+    #question {
+        flex: 1;
+    }
+    #options {
+        flex: 1;
+    }
+    #next {
+        @include greenButtonStyle;
+        text-decoration: none;
+        // this 11px is randoml specified don't know what it means
+        flex: 0 0 11px;
+        text-align: center;
+    }
 }

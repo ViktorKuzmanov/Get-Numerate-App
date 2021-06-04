@@ -11,11 +11,15 @@
 			<button id="backButton" onclick="goBack()"><img src="./assets/goBack.jpg" alt="buton image" /></button>
 			<label>Setup</label>
 		</div>
-		<p>What type of question do you want to practise?</p>
-		<p><input type="checkbox" onchange="checkBoxTapped(this.id)" id="firstQuestion" /> What is 20% of 50?</p>
-		<p><input type="checkbox" onchange="checkBoxTapped(this.id)" id="secondQuestion" /> 10 is what % of 50?</p>
-		<p><input type="checkbox" onchange="checkBoxTapped(this.id)" id="thrirdQuestion" /> 10 is 20% of what?</p>
-		<a id="next" href="./setupGame.html">Next</a>
+		<div class="flexContainer">
+			<p id="question">What type of question do you want to practise?</p>
+			<div id="options">
+				<p><input type="checkbox" onchange="checkBoxTapped(this.id)" id="firstQuestion" /> What is 20% of 50?</p>
+				<p><input type="checkbox" onchange="checkBoxTapped(this.id)" id="secondQuestion" /> 10 is what % of 50?</p>
+				<p><input type="checkbox" onchange="checkBoxTapped(this.id)" id="thrirdQuestion" /> 10 is 20% of what?</p>
+			</div>
+			<a id="next" href="./setupGame.html">Next</a>
+		</div>
 		<script>
 			function goBack() {
 				window.history.back();
