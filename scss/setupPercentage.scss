@@ -54,3 +54,42 @@ body {
         text-align: center;
     }
 }
+@media only screen and (min-width: 768px) {
+    #navbar {
+        label {
+            font-size: 35px;
+        }
+        #backButton {
+            background-color: $backgroundColor;
+            border: none;
+            position: absolute;
+            padding: 0;
+            left: 20px;
+            img {
+                height: 50px;
+            }
+        }
+    }
+    .flexContainer {
+        #question {
+            flex: 1;
+            margin-top: 50px;
+            font-size: 65px;
+            margin-bottom: 0;
+        }
+        #options {
+            flex: 2;
+            font-size: 60px;
+        }
+        #next {
+            @include greenButtonStyle;
+            text-decoration: none;
+            padding: 5px 20px;
+            font-size: 38px;
+            width: 300px;
+            // this 11px is randoml specified don't know what it means
+            flex: 0 0 11px;
+            text-align: center;
+        }
+    }
+}
