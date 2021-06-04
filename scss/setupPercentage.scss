@@ -14,6 +14,9 @@ body {
     align-items: center;
     justify-content: center;
     background-color: $navbarBackgroundColor;
+    label {
+        font-size: 25px;
+    }
     #backButton {
         background-color: $backgroundColor;
         border: none;
@@ -29,14 +32,19 @@ body {
 .flexContainer {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
     // justify-content: space-between;
     flex-wrap: nowrap;
     height: 80vh;
     #question {
         flex: 1;
+        margin-top: 50px;
+        font-size: 35px;
+        margin-bottom: 0;
     }
     #options {
-        flex: 1;
+        flex: 2;
+        font-size: 30px;
     }
     #next {
         @include greenButtonStyle;
