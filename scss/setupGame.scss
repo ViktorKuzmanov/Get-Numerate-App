@@ -1,0 +1,26 @@
+@import "./general";
+
+* {
+    color: $textColor;
+}
+
+body {
+    background-color: $backgroundColor;
+}
+
+#navbar {
+    @include navBarStyle;
+}
+
+@media only screen and (min-width: 768px) {
+    #navbar {
+        label {
+            font-size: 35px;
+        }
+        #backButton {
+            img {
+                height: 50px;
+            }
+        }
+    }
+}

@@ -4,11 +4,14 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/setupGame.css" />
 		<title>Setup game</title>
-		<script></script>
 	</head>
 	<body>
-		<button onclick="goBack()">Go Back</button>
+		<div id="navbar">
+			<button id="backButton" onclick="goBack()"><img src="./assets/goBack.jpg" alt="buton image" /></button>
+			<label>Setup</label>
+		</div>
 		<p>I want to practise <span id="operationName"></span> with</p>
 		<input type="number" id="firstNumDigit" /> digit and <input type="number" id="secondNumDigit" /> digit number
 		<p><a href="game.html" onclick="saveDigitsInStorage()">Start</a></p>
