@@ -14,9 +14,9 @@
 		<div class="flexContainer">
 			<p id="question">What type of question do you want to practise?</p>
 			<div id="options">
-				<p><input type="checkbox" onchange="checkBoxTapped('firstQuestion')"/> What is 20% of 50?</p>
-				<p><input type="checkbox" onchange="checkBoxTapped('secondQuestion')"/> 10 is what % of 50?</p>
-				<p><input type="checkbox" onchange="checkBoxTapped('thrirdQuestion')"/> 10 is 20% of what?</p>
+				<p onclick="checkBoxTapped('firstQuestion')" ><input type="checkbox" id="firstQuestion" /> What is 20% of 50?</p>
+				<p onclick="checkBoxTapped('secondQuestion')" ><input type="checkbox" id="secondQuestion" /> 10 is what % of 50?</p>
+				<p onclick="checkBoxTapped('thrirdQuestion')" ><input type="checkbox" id="thrirdQuestion" /> 10 is 20% of what?</p>
 			</div>
 			<a id="next" href="./setupGame.html">Next</a>
 		</div>
@@ -29,6 +29,10 @@
 				const retrievedStringObject = localStorage.getItem("percentagesQuestions");
 				const jsObject = JSON.parse(retrievedStringObject);
 				jsObject[idOfCheckbox] = !jsObject[idOfCheckbox];
+
+				// set checkbox to !checked so the user can see visually
+				const currentCheckbox= document.getElementById(idOfCheckbox);
+				currentCheckbox.checked = jsObject[idOfCheckbox];
 
 				// save changed object in local storage
 				localStorage.setItem("percentagesQuestions", JSON.stringify(jsObject));
