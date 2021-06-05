@@ -45,8 +45,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 10px;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   height: 80vh;
 }
 
@@ -97,13 +95,6 @@ body {
 @media only screen and (min-width: 768px) {
   #navbar label {
     font-size: 35px;
-  }
-  #navbar #backButton {
-    background-color: #393e46;
-    border: none;
-    position: absolute;
-    padding: 0;
-    left: 20px;
   }
   #navbar #backButton img {
     height: 50px;

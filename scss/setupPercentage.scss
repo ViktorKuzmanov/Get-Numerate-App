@@ -9,24 +9,7 @@ body {
 }
 
 #navbar {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $navbarBackgroundColor;
-    label {
-        font-size: 25px;
-    }
-    #backButton {
-        background-color: $backgroundColor;
-        border: none;
-        position: absolute;
-        padding: 0;
-        left: 20px;
-        img {
-            height: 30px;
-        }
-    }
+    @include navBarStyle;
 }
 
 .flexContainer {
@@ -37,8 +20,6 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    // justify-content: space-between;
-    flex-wrap: nowrap;
     height: 80vh;
     #question {
         flex: 1;
@@ -65,16 +46,12 @@ body {
             font-size: 35px;
         }
         #backButton {
-            background-color: $backgroundColor;
-            border: none;
-            position: absolute;
-            padding: 0;
-            left: 20px;
             img {
                 height: 50px;
             }
         }
     }
+
     .flexContainer {
         input[type="checkbox"] {
             transform: scale(2);

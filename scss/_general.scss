@@ -21,5 +21,26 @@ $fontFamily: "PT Sans";
     }
 }
 
+@mixin navBarStyle() {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $navbarBackgroundColor;
+    label {
+        font-size: 25px;
+    }
+    #backButton {
+        background-color: $backgroundColor;
+        border: none;
+        position: absolute;
+        padding: 0;
+        left: 20px;
+        img {
+            height: 30px;
+        }
+    }
+}
+
 // mobile design global variables (used in multiple screens):
 $mobileHeadlineFontSize: 40px;
