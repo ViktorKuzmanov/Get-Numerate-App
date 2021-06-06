@@ -12,9 +12,26 @@
 			<button id="backButton" onclick="goBack()"><img src="./assets/goBack.jpg" alt="buton image" /></button>
 			<label>Setup</label>
 		</div>
-		<p>I want to practise <span id="operationName"></span> with</p>
-		<input type="number" id="firstNumDigit" /> digit and <input type="number" id="secondNumDigit" /> digit number
-		<p><a href="game.html" onclick="saveDigitsInStorage()">Start</a></p>
+		<div class="flexContainer">
+			<div class="header">
+				<p>I want to practise <span id="operationName"></span> with</p>
+				<span>
+					<button id="addButton" onclick="digitButtonTapped('firstNumDigit','+')">+</button>
+					<input id="firstNumDigit" type="text" value="1" />
+					<button id="subtractButton" onclick="digitButtonTapped('firstNumDigit', '-')">-</button>
+				</span>
+				digit and
+				<span>
+					<button id="addButton" onclick="digitButtonTapped('firstNumDigit','+')">+</button>
+					<input id="secondNumDigit" type="text" value="1" />
+					<button id="subtractButton" onclick="digitButtonTapped('firstNumDigit', '-')">-</button>
+				</span>
+				digit numbers
+			</div>
+			<br />
+			<p><a href="game.html" onclick="saveDigitsInStorage()">Start</a></p>
+		</div>
+
 		<script>
 			function saveDigitsInStorage() {
 				const keyForObject = localStorage.getItem("currentOperation") + "Digits";
