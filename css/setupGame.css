@@ -34,6 +34,11 @@ body {
   margin-left: 20px;
 }
 
+#flexContainer .header {
+  font-size: 35px;
+  margin-top: 25px;
+}
+
 #flexContainer .header p {
   margin-bottom: 0;
 }
@@ -57,12 +62,14 @@ body {
   box-sizing: border-box;
   display: block;
   text-align: center;
+  font-size: 16px;
   color: black;
 }
 
 #flexContainer .header button {
   width: 24px;
   height: 15px;
+  font-size: 16px;
   display: block;
   line-height: 15px;
   border: none;

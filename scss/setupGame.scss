@@ -15,6 +15,8 @@ body {
 #flexContainer {
     margin-left: 20px;
     .header {
+        font-size: 35px;
+        margin-top: 25px;
         p {
             margin-bottom: 0;
         }
@@ -36,12 +38,14 @@ body {
             box-sizing: border-box;
             display: block;
             text-align: center;
+            font-size: 16px;
             color: black;
         }
 
         button {
             width: 24px;
             height: 15px;
+            font-size: 16px;
             display: block;
             line-height: 15px;
             border: none;
