@@ -20,12 +20,9 @@ body {
   width: 95%;
   height: 80%;
   padding: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -ms-grid;
+  box-sizing: border-box;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1px;
 }
 
@@ -35,9 +32,7 @@ body {
   height: 30vw;
   color: white;
   margin: 20px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   position: relative;
   border-radius: 10%;
   background-color: white;
@@ -66,8 +61,7 @@ body {
 @media only screen and (min-width: 480px) and (max-width: 2024px) {
   .container {
     padding: 30px;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1px;
   }
   .box {

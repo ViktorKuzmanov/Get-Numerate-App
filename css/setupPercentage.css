@@ -8,15 +8,9 @@ body {
 
 #navbar {
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: #2d323b;
 }
 
@@ -37,36 +31,26 @@ body {
 }
 
 .flexContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-left: 10px;
   height: 80vh;
 }
 
 .flexContainer input[type="checkbox"] {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
   vertical-align: middle;
 }
 
 .flexContainer #question {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   margin-top: 50px;
   font-size: 35px;
   margin-bottom: 0;
 }
 
 .flexContainer #options {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  flex: 2;
   font-size: 30px;
 }
 
@@ -80,9 +64,7 @@ body {
   cursor: pointer;
   outline: none;
   text-decoration: none;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 11px;
-          flex: 0 0 11px;
+  flex: 0 0 11px;
   text-align: center;
 }
 
@@ -100,22 +82,17 @@ body {
     height: 50px;
   }
   .flexContainer input[type="checkbox"] {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
     vertical-align: middle;
   }
   .flexContainer #question {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    flex: 1;
     margin-top: 50px;
     font-size: 65px;
     margin-bottom: 0;
   }
   .flexContainer #options {
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
+    flex: 2;
     font-size: 60px;
   }
   .flexContainer #next {
@@ -131,9 +108,7 @@ body {
     padding: 5px 20px;
     font-size: 38px;
     width: 300px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 11px;
-            flex: 0 0 11px;
+    flex: 0 0 11px;
     text-align: center;
   }
   .flexContainer #next a {

@@ -53,6 +53,10 @@ body {
     }
 }
 
+#startButton {
+    @include greenButtonStyle;
+}
+
 @media only screen and (min-width: 768px) {
     #navbar {
         label {
