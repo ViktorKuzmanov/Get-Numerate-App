@@ -13,6 +13,9 @@ body {
 }
 
 .header {
+    p {
+        margin-bottom: 0;
+    }
     span:nth-child(2) {
         display: inline-block;
         width: 25px;

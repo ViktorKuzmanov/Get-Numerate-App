@@ -30,6 +30,10 @@ body {
   height: 30px;
 }
 
+.header p {
+  margin-bottom: 0;
+}
+
 .header span:nth-child(2) {
   display: inline-block;
   width: 25px;
