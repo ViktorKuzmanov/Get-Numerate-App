@@ -103,6 +103,19 @@ body {
   font-family: "PT Sans";
 }
 
+.btn-primary {
+  background-color: #00adb5 !important;
+}
+
+.btn-outline-primary {
+  border-color: #00adb5 !important;
+  color: #eeeeee !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #00adb5 !important;
+}
+
 @media only screen and (min-width: 768px) {
   #navbar label {
     font-size: 35px;
