@@ -36,7 +36,12 @@
 		<script>
 			function digitButtonTapped(whichDigit, operation) {
 				const input = document.getElementById(whichDigit);
-				input.value = eval(input.value + operation + "1");
+				const newInput = eval(input.value + operation + "1");
+				if (newInput < 1 || newInput > 3) {
+					// ne prajs nisto nema update
+				} else {
+					input.value = eval(input.value + operation + "1");
+				}
 			}
 			function saveDigitsInStorage() {
 				const keyForObject = localStorage.getItem("currentOperation") + "Digits";
