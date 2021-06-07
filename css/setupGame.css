@@ -32,9 +32,14 @@ body {
 
 #flexContainer {
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  height: 80vh;
 }
 
 #flexContainer .header {
+  flex: 2;
   font-size: 32px;
   margin-top: 25px;
 }
@@ -86,7 +91,13 @@ body {
   background-color: #00acb5b2;
 }
 
+#flexContainer .chooseModeDiv {
+  flex: 1;
+  font-size: 40px;
+}
+
 #flexContainer #startButton {
+  flex: 0 0 11px;
   background-color: #00adb5;
   border: none;
   border-radius: 10px;

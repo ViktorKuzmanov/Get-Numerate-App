@@ -14,7 +14,12 @@ body {
 
 #flexContainer {
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    height: 80vh;
     .header {
+        flex: 2;
         font-size: 32px;
         margin-top: 25px;
         p {
@@ -63,7 +68,14 @@ body {
         }
     }
 
+    .chooseModeDiv {
+        flex: 1;
+        font-size: 40px;
+    }
+
     #startButton {
+        // this 11px is randoml specified don't know what it means
+        flex: 0 0 11px;
         @include greenButtonStyle;
     }
 }

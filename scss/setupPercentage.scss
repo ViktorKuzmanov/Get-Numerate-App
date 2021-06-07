@@ -19,7 +19,7 @@ body {
     }
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
+    margin-left: 20px;
     height: 80vh;
     #question {
         flex: 1;
@@ -57,6 +57,10 @@ body {
             transform: scale(2);
             vertical-align: middle;
         }
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        height: 80vh;
         #question {
             flex: 1;
             margin-top: 50px;

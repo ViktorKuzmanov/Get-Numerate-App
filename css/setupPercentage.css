@@ -33,7 +33,7 @@ body {
 .flexContainer {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+  margin-left: 20px;
   height: 80vh;
 }
 
@@ -80,6 +80,12 @@ body {
   }
   #navbar #backButton img {
     height: 50px;
+  }
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    height: 80vh;
   }
   .flexContainer input[type="checkbox"] {
     transform: scale(2);
