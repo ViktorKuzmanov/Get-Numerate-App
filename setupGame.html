@@ -23,18 +23,21 @@
 				</span>
 				&nbsp and
 				<span>
-					<button id="addButton" onclick="digitButtonTapped('firstNumDigit','+')">+</button>
+					<button id="addButton" onclick="digitButtonTapped('secondNumDigit','+')">+</button>
 					<input id="secondNumDigit" type="text" value="1" />
-					<button id="subtractButton" onclick="digitButtonTapped('firstNumDigit', '-')">-</button>
+					<button id="subtractButton" onclick="digitButtonTapped('secondNumDigit', '-')">-</button>
 				</span>
-				<br />
-				digit numbers
+				&nbsp digit numbers
 			</div>
 			<br />
-			<button id="startButton"><a href="game.html" onclick="saveDigitsInStorage()">Start</a></button>
+			<button onclick="saveDigitsInStorage()" id="startButton"><a href="game.html">Start</a></button>
 		</div>
 
 		<script>
+			function digitButtonTapped(whichDigit, operation) {
+				const input = document.getElementById(whichDigit);
+				input.value = eval(input.value + operation + "1");
+			}
 			function saveDigitsInStorage() {
 				const keyForObject = localStorage.getItem("currentOperation") + "Digits";
 				const firstDigitInput = document.getElementById("firstNumDigit");
