@@ -32,15 +32,24 @@
 			<br />
 			<div class="chooseModeDiv">
 				<div class="chooseModeText">Choose mode</div>
-				<button class="btn btn-primary">Easy</button>
-				<button class="btn btn-outline-primary">Medium</button>
-				<button class="btn btn-outline-primary">Hard</button>
+				<button class="btn btn-primary" onclick="chooseModeIsTapped(event)">Easy</button>
+				<button class="btn btn-outline-primary" onclick="chooseModeIsTapped(event)">Medium</button>
+				<button class="btn btn-outline-primary" onclick="chooseModeIsTapped(event)">Hard</button>
 			</div>
-
 			<button onclick="saveDigitsInStorage()" id="startButton"><a href="game.html">Start</a></button>
 		</div>
 
 		<script>
+			function chooseModeIsTapped(event, button) {
+				// rest buttons
+				const buttons = document.getElementsByTagName("button");
+				for (button of buttons) {
+					button.classList.remove("btn-primary");
+					button.classList.add("btn-outline-primary");
+				}
+				// highlight/choose button that got tapped
+				event.target.classList.add("btn-primary");
+			}
 			function digitButtonTapped(whichDigit, operation) {
 				const input = document.getElementById(whichDigit);
 				const newInput = eval(input.value + operation + "1");
