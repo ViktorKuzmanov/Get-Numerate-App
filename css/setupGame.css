@@ -35,7 +35,7 @@ body {
 }
 
 #flexContainer .header {
-  font-size: 35px;
+  font-size: 32px;
   margin-top: 25px;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 #flexContainer .header input {
-  width: 24px;
+  width: 34px;
   box-sizing: border-box;
   display: block;
   text-align: center;
@@ -67,8 +67,8 @@ body {
 }
 
 #flexContainer .header button {
-  width: 24px;
-  height: 15px;
+  width: 34px;
+  height: 20px;
   font-size: 16px;
   display: block;
   line-height: 15px;
