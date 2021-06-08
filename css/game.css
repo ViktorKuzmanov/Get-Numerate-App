@@ -1,6 +1,5 @@
 body {
   background-color: #393e46;
-  color: #eeeeee;
 }
 
 #navbar {
@@ -9,6 +8,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #2d323b;
+  color: #eeeeee;
 }
 
 #navbar label {
@@ -25,5 +25,21 @@ body {
 
 #navbar #backButton img {
   height: 30px;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  height: 80vh;
+}
+
+.flexContainer #operationDiv {
+  flex: 2;
+  color: #eeeeee;
+}
+
+.flexContainer #numpad {
+  flex: 1;
 }
 /*# sourceMappingURL=game.css.map */

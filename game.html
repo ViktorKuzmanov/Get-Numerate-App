@@ -33,27 +33,31 @@
 			<button id="backButton" onclick="goBack()"><img src="./assets/goBack.jpg" alt="buton image" /></button>
 			<label>Game</label>
 		</div>
-		<p>
-			<span id="textBefore"></span>
-			<span id="num1"></span>
-			<span id="textInMiddle"></span>
-			<span id="num2"></span>
-			<span id="textAfter"></span>
-		</p>
-		<input id="result" type="number" placeholder="Write result" />
-		<p>
-			<input type="button" value="1" onClick="addNumber(this);" />
-			<input type="button" value="2" onClick="addNumber(this);" />
-			<input type="button" value="3" onClick="addNumber(this);" />
-			<input type="button" value="4" onClick="addNumber(this);" />
-			<input type="button" value="5" onClick="addNumber(this);" />
-			<input type="button" value="6" onClick="addNumber(this);" />
-			<input type="button" value="7" onClick="addNumber(this);" />
-			<input type="button" value="8" onClick="addNumber(this);" />
-			<input type="button" value="9" onClick="addNumber(this);" />
-			<input type="button" value="0" onClick="addNumber(this);" />
-			<input type="button" value="Done" onClick="checkIfResultIsCorrect()" />
-		</p>
+		<div class="flexContainer">
+			<div id="operationDiv">
+				<p>
+					<span id="textBefore"></span>
+					<span id="num1"></span>
+					<span id="textInMiddle"></span>
+					<span id="num2"></span>
+					<span id="textAfter"></span>
+				</p>
+				<input id="result" type="number" placeholder="Write result" />
+			</div>
+			<p id="numpad">
+				<input type="button" value="1" onClick="addNumber(this);" />
+				<input type="button" value="2" onClick="addNumber(this);" />
+				<input type="button" value="3" onClick="addNumber(this);" />
+				<input type="button" value="4" onClick="addNumber(this);" />
+				<input type="button" value="5" onClick="addNumber(this);" />
+				<input type="button" value="6" onClick="addNumber(this);" />
+				<input type="button" value="7" onClick="addNumber(this);" />
+				<input type="button" value="8" onClick="addNumber(this);" />
+				<input type="button" value="9" onClick="addNumber(this);" />
+				<input type="button" value="0" onClick="addNumber(this);" />
+				<input type="button" value="Done" onClick="checkIfResultIsCorrect()" />
+			</p>
+		</div>
 		<script src="./js/game.js"></script>
 	</body>
 </html>

@@ -1,9 +1,23 @@
 @import "./general";
 body {
     background-color: $backgroundColor;
-    color: $textColor;
 }
 
 #navbar {
     @include navBarStyle;
+    color: $textColor;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    height: 80vh;
+    #operationDiv {
+        flex: 2;
+        color: $textColor;
+    }
+    #numpad {
+        flex: 1;
+    }
 }
