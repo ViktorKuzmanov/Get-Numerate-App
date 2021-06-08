@@ -1,0 +1,9 @@
+@import "./general";
+body {
+    background-color: $backgroundColor;
+    color: $textColor;
+}
+
+#navbar {
+    @include navBarStyle;
+}
