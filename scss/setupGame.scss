@@ -107,4 +107,11 @@ body {
             }
         }
     }
+    #flexContainer {
+        .header,
+        .chooseModeDiv,
+        #startButton {
+            font-size: 50px;
+        }
+    }
 }

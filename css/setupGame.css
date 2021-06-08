@@ -138,5 +138,10 @@ body {
   #navbar #backButton img {
     height: 50px;
   }
+  #flexContainer .header,
+  #flexContainer .chooseModeDiv,
+  #flexContainer #startButton {
+    font-size: 50px;
+  }
 }
 /*# sourceMappingURL=setupGame.css.map */
