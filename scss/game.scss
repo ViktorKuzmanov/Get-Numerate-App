@@ -23,7 +23,8 @@ body {
         flex: 2;
         color: $textColor;
         #result {
-            width: 70px;
+            width: 90px;
+            background-color: $backgroundColor;
             color: $interactionColor;
         }
     }
@@ -32,12 +33,18 @@ body {
         grid-gap: 10px;
         grid-template-columns: 1fr 1fr 1fr;
         flex: 2;
-        input {
+        input,
+        button {
             font-size: 30px;
             width: 25vw;
             height: 60px;
             max-width: 100px;
             border-radius: 15%;
+            color: $textColor;
+            background-color: $interactionColor;
+            img {
+                height: 40px;
+            }
         }
     }
 }

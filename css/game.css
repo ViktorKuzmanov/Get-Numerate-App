@@ -46,7 +46,8 @@ body {
 }
 
 .flexContainer #operationDiv #result {
-  width: 70px;
+  width: 90px;
+  background-color: #393e46;
   color: #00adb5;
 }
 
@@ -57,11 +58,19 @@ body {
   flex: 2;
 }
 
-.flexContainer #numpad input {
+.flexContainer #numpad input,
+.flexContainer #numpad button {
   font-size: 30px;
   width: 25vw;
   height: 60px;
   max-width: 100px;
   border-radius: 15%;
+  color: #eeeeee;
+  background-color: #00adb5;
+}
+
+.flexContainer #numpad input img,
+.flexContainer #numpad button img {
+  height: 40px;
 }
 /*# sourceMappingURL=game.css.map */
