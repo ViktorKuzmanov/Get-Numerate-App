@@ -98,6 +98,10 @@ body {
 
 #flexContainer #startButton {
   flex: 0 0 11px;
+  text-decoration: none;
+  color: #eeeeee;
+  font-family: "PT Sans";
+  text-align: center;
   background-color: #00adb5;
   border: none;
   border-radius: 10px;

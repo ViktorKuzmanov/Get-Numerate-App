@@ -76,6 +76,10 @@ body {
     #startButton {
         // this 11px is randoml specified don't know what it means
         flex: 0 0 11px;
+        text-decoration: none;
+        color: $textColor;
+        font-family: $fontFamily;
+        text-align: center;
         @include greenButtonStyle;
     }
 }
