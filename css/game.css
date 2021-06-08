@@ -34,6 +34,7 @@ body {
   margin-left: 20px;
   height: 80vh;
   padding: 0px 40px;
+  align-items: center;
   text-align: center;
 }
 
@@ -45,10 +46,22 @@ body {
 }
 
 .flexContainer #operationDiv #result {
-  width: 50px;
+  width: 70px;
+  color: #00adb5;
 }
 
 .flexContainer #numpad {
-  flex: 1;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex: 2;
+}
+
+.flexContainer #numpad input {
+  font-size: 30px;
+  width: 25vw;
+  height: 60px;
+  max-width: 100px;
+  border-radius: 15%;
 }
 /*# sourceMappingURL=game.css.map */
