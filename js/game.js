@@ -5,6 +5,13 @@ var num2;
 generateRandomNumbersBasedOnDigits();
 updateUIwithQuestion();
 
+function backspaceTapped() {
+	const resultInput = document.getElementById("result");
+	// remove last digit from number
+	const newNumber = resultInput.value.substring(0, resultInput.value.length - 1);
+	resultInput.value = newNumber;
+}
+
 function generateRandomNumbersBasedOnDigits() {
 	function checkIfOperationMakesSense(number1, number2) {
 		// Check if operation is possible . You cannot devide by zero or "1 - 20"
