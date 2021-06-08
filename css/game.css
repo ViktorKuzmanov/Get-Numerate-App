@@ -30,13 +30,22 @@ body {
 .flexContainer {
   display: flex;
   flex-direction: column;
+  font-family: "PT Sans";
   margin-left: 20px;
   height: 80vh;
+  padding: 0px 40px;
+  text-align: center;
 }
 
 .flexContainer #operationDiv {
+  margin-top: 70px;
+  font-size: 40px;
   flex: 2;
   color: #eeeeee;
+}
+
+.flexContainer #operationDiv #result {
+  width: 50px;
 }
 
 .flexContainer #numpad {
