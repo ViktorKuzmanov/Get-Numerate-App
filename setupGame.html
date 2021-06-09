@@ -42,11 +42,13 @@
 
 		<script>
 			function chooseModeIsTapped(event, button) {
-				// rest buttons
+				// reset buttons
 				const buttons = document.getElementsByTagName("button");
-				for (button of buttons) {
-					button.classList.remove("btn-primary");
-					button.classList.add("btn-outline-primary");
+				// get only the last three buttons
+				for (var i = buttons.length - 3; i < buttons.length; i++) {
+					const currentButton = buttons[i];
+					currentButton.classList.remove("btn-primary");
+					currentButton.classList.add("btn-outline-primary");
 				}
 				// highlight/choose button that got tapped
 				event.target.classList.add("btn-primary");
