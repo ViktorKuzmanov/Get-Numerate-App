@@ -3,6 +3,14 @@ body {
   touch-action: manipulation;
 }
 
+.container {
+  font-size: 20px;
+}
+
+.container .modal-title {
+  font-size: 24px;
+}
+
 #navbar {
   height: 50px;
   display: flex;
