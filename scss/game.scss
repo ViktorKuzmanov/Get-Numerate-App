@@ -1,6 +1,7 @@
 @import "./general";
 body {
     background-color: $backgroundColor;
+    touch-action: manipulation;
 }
 
 #navbar {

@@ -1,5 +1,6 @@
 body {
   background-color: #393e46;
+  touch-action: manipulation;
 }
 
 #navbar {
