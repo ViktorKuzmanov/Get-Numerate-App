@@ -13,21 +13,6 @@ function backspaceTapped() {
 }
 
 function generateRandomNumbersBasedOnDigits() {
-	function checkIfOperationMakesSense(number1, number2) {
-		// Check if operation is possible . You cannot devide by zero or "1 - 20"
-		if (number1 < number2) {
-			var temporaryNum1 = number1;
-			num1 = number2;
-			num2 = temporaryNum1;
-		}
-		const currentOperation = localStorage.getItem("currentOperation");
-		if (currentOperation == "Division") {
-			while (num1 % num2 != 0) {
-				// there is remainder between num1 / num2 like 31/7=4.4
-				generateRandomNumbersBasedOnDigits();
-			}
-		}
-	}
 	// ! 1. get digits of num1 and num2 from localStorage
 	const currentOperation = localStorage.getItem("currentOperation");
 	const getChosenDigitsString = localStorage.getItem(currentOperation + "Digits");
@@ -60,6 +45,22 @@ function generateRandomNumbersBasedOnDigits() {
 				break;
 		}
 		return parseInt(randomNum);
+	}
+	function checkIfOperationMakesSense(number1, number2) {
+		// Check if operation is possible . You cannot devide by zero or "1 - 20"
+		if (number1 < number2) {
+			var temporaryNum1 = number1;
+			num1 = number2;
+			num2 = temporaryNum1;
+		}
+		const currentOperation = localStorage.getItem("currentOperation");
+		if (currentOperation == "Division") {
+			while (num1 % num2 != 0) {
+				// there is remainder between num1 / num2 like 31/7=4.4 try again
+				generateRandomNumbersBasedOnDigits();
+			}
+		}
+		// TODO: Check - if operation result is decimal number - and try again (we don't want decimals)
 	}
 }
 
