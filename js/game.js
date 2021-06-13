@@ -192,7 +192,7 @@ function checkIfResultIsCorrect() {
 		const textInMiddle = document.getElementById("textInMiddle").innerText;
 		var result = "";
 		switch (textInMiddle) {
-			case "% of":
+			case "% of ":
 				result = (num2 * num1) / 100;
 				break;
 			case "is what percent % of ":
