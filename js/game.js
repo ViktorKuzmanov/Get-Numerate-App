@@ -178,7 +178,8 @@ function checkIfResultIsCorrect() {
 	// generate another question and update ui
 	generateRandomNumbersBasedOnDigits();
 	updateUIwithQuestion();
-
+	// delete old result - make empt input
+	document.getElementById("result").value = "";
 	function getCorrectResultFromOperation() {
 		const num1 = document.getElementById("num1").innerHTML;
 		const num2 = document.getElementById("num2").innerHTML;
