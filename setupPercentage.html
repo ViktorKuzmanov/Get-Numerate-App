@@ -21,6 +21,17 @@
 			<a id="next" href="./setupGame.html" onclick="return nextWasTapped()">Next</a>
 		</div>
 		<script>
+			updateCheckboxesBasedOnData()
+			function updateCheckboxesBasedOnData() {
+				const percentagesQuestions = localStorage.getItem("percentagesQuestions")
+				const percentagesQuestionsJsObject = JSON.parse(percentagesQuestions);
+				const allCheckBoxes = document.querySelectorAll("input[type='checkbox']")
+				var indexOfCheckbox = 0
+				for (const key in percentagesQuestionsJsObject) {
+					allCheckBoxes[indexOfCheckbox].checked = percentagesQuestionsJsObject[key]
+					indexOfCheckbox += 1;
+				}
+			}	
 			function nextWasTapped() {
 				// check if at least one question is chosen so we can proceed
 				const percentagesQuestions = localStorage.getItem("percentagesQuestions")
