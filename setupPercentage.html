@@ -18,9 +18,21 @@
 				<p onclick="checkBoxTapped('secondQuestion')" ><input type="checkbox" id="secondQuestion" /> 10 is what % of 50?</p>
 				<p onclick="checkBoxTapped('thrirdQuestion')" ><input type="checkbox" id="thrirdQuestion" /> 10 is 20% of what?</p>
 			</div>
-			<a id="next" href="./setupGame.html">Next</a>
+			<a id="next" href="./setupGame.html" onclick="return nextWasTapped()">Next</a>
 		</div>
 		<script>
+			function nextWasTapped() {
+				// check if at least one question is chosen so we can proceed
+				const percentagesQuestions = localStorage.getItem("percentagesQuestions")
+				const percentagesQuestionsJsObject = JSON.parse(percentagesQuestions);
+				for (const key in percentagesQuestionsJsObject) {
+					if(percentagesQuestionsJsObject[key]) {
+						return true
+					}
+				}
+				alert("Please choose at least one question to practise")
+				return false
+			}	
 			function goBack() {
 				window.history.back();
 			}
