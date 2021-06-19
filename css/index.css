@@ -59,6 +59,9 @@ body {
   cursor: pointer;
   outline: none;
   width: calc(100vw - 70px);
+  text-decoration: none;
+  text-align: center;
+  color: #eeeeee;
   max-width: 300px;
   position: fixed;
   bottom: 30px;

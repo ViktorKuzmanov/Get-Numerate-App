@@ -52,6 +52,9 @@ body {
 .getstarted {
     @include greenButtonStyle;
     width: calc(100vw - 70px);
+    text-decoration: none;
+    text-align: center;
+    color: $textColor;
     max-width: 300px;
     position: fixed;
     bottom: 30px;
