@@ -54,6 +54,10 @@ body {
   font-size: 30px;
 }
 
+.flexContainer #options p {
+  cursor: pointer;
+}
+
 .flexContainer #next {
   background-color: #00adb5;
   border: none;

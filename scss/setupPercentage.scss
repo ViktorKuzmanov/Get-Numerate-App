@@ -30,6 +30,9 @@ body {
     #options {
         flex: 2;
         font-size: 30px;
+        p {
+            cursor: pointer;
+        }
     }
     #next {
         @include greenButtonStyle;
